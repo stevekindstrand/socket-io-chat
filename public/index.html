@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script defer src="socket.io/socket.io.js"></script>
+    <script defer src="./javascripts/script.js"></script>
+  </head>
+
+  <body>
+    <input id="user" type="text" placeholder="Username (Required)" />
+    <button id="saveUserBtn">Save Username</button>
+
+    <br />
+
+    <input id="room" type="number" placeholder="Chatroom (Required)" />
+    <button id="saveRoomBtn">Save Chatroom</button>
+
+    <form id="form">
+      <input id="input" type="text" placeholder="Message" />
+      <button>Send Message</button>
+    </form>
+
+    <div id="userNameDiv"></div>
+    <div id="roomNumberDiv"></div>
+    <div id="chatDiv"></div>
+  </body>
+</html>
